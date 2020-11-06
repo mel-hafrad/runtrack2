@@ -1,26 +1,30 @@
 
-
 <?php 
 
 
-$argument = $_GET['argument'];
-$argument2 = $_GET['argument2'];
+//$argument = $_GET['argument'];
+//$argument2 = $_GET['argument2'];
 
-echo $argument  . "<br>" . $argument2; 
+// echo $argument  . "<br>" . $argument2; 
 
-$i = 0;
 
+
+$i = 0;              //initialiser la variable en dehors de la boucle pour un Foreach ;
+
+
+
+
+//pour chaque élément de Tableau "$_Get attribu une variable "$key" au clés "$value" au valeur de mon tableau. 
+# $_Get est un tableau généré automatiquement qui contient les "$values" des "$keys" quand on le submit ;
 foreach ($_GET as $key => $value){
     $i++; 
 }
 echo "<br>";
 echo $i;
 
-
+// Code php 
 
 ?>
-
-
 
 
 <form action="index.php" method="GET">
@@ -32,7 +36,6 @@ echo $i;
 
     <input type="submit" value="submit">
 </form>
-
 
 
 

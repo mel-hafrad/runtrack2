@@ -26,7 +26,7 @@ echo $i;
 ?>
 
 
-<form action="index.php" method="post">
+<form action="index.php" method="POST">
     <label for="argument">argument</label>
     <input type="text" id="argument" name="argument"> <br><br>
 
