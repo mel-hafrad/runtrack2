@@ -19,5 +19,7 @@ $str = preg_replace('/s+/','',$str);
 $str = preg_replace('/t+/','',$str);
 
 echo $str;  
+
+
 ?>
        
