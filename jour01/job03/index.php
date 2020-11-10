@@ -26,6 +26,7 @@
     
 
         <?php
+
             $boo = true; // assigne la valeur TRUE à $boo Booléen
             $a = 1234; // un nombre décimal Entiers
             $carac = "ouais"; // une chaine de caractères

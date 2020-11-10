@@ -15,10 +15,6 @@
         else {
             echo " Pair"." <br>";
         }
-
-
-    
-           
         
         
 
