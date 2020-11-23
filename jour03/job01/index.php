@@ -1,25 +1,21 @@
 <?php
 
+$number = array (98, 171, 173, 200, 204, 404, 459);
 
- //  array
-    $i = array(200, 204, 173, 98, 171, 404, 459);
+for ($compteur = 0 ;$compteur<=6; $compteur++)
+{
 
-    foreach($i as $val){
-        echo $val;
-        
+    if ($number[$compteur] %2 == 0)
 
-        if ($val %2){ 
-        echo " est impair";
-        echo "</br>";}
-
-        else {
-            echo " Pair"." <br>";
-        }
-        
-        
-
+    {
+        echo $number[$compteur]. ' est pair <br/>';
     }
 
+    else 
+    {
+        echo $number[$compteur]. ' est impair <br/>';
+    }
 
+}
 
-
+?>

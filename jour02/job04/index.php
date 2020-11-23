@@ -1,41 +1,37 @@
-<?php 
+<?php
 
-$n = 0;
-while ($n < 100)
-{   
-        $n++; 
+        $number= 1;
 
-
-
-
-        if(!($n%5)&&(!($n%3)))
+        while ($number <= 100)
         {
-            echo 'FizzBuzz' . "<br>";
-            
-            
-        }
+        
+            if ($number %3 == 0 AND $number %5 == 0)
+            {
+                echo 'FizzBuzz <br>';
+                $number++;
+            }
 
+            elseif ($number %3 == 0)
+            {
+                echo 'Fizz <br>';
+                $number++;
+            }
 
-        elseif(!($n%3))
-        {
-            echo "Fizz".  "<br>";
+            elseif ($number %5 ==0)
+            {
+                echo  'Buzz <br>';
+                $number++;
+            }
+
            
-        }
 
-        elseif(!($n%5))
-        {
-            echo 'Buzz';
-            echo "<br>";
-        }
-        
-        else {
-            echo $n . '<br>';
+            else
+            {
+                echo $number. '<br>';
+                $number++;
+            }
 
         }
-        
-    }
-
-
       
 
 ?>

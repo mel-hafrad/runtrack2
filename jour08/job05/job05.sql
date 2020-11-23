@@ -1,1 +1,0 @@
-SELECT `sexe` FROM `etudiants` WHERE sexe='femme';

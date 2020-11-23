@@ -1,20 +1,24 @@
 <?php
 
-$n = 0;
+        $number= 0;
 
-while ($n < 1336){
-        echo $n;
-        $n = $n + 1;
-        echo " <br/>";
+        while ($number <= 1337)
+        {
+        
+            if ($number == 42)
+            {
+                echo  '<b>  <u> '. $number .' </b> </u> <br>';
+                $number++;
+            }
 
-if ( $n == 42){
-    echo "<b><u> $n</u> </b>";
-    echo " </br> ";
-    $n = $n + 1;
-}
-}
+            else
+            {
+                echo $number . '<br>';
+                $number++;
+            }
 
-
-
+        }
+        
+      
 
 ?>

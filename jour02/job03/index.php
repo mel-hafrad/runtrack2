@@ -1,46 +1,37 @@
-<?php 
+<?php
 
+        $number= 0;
 
-$n = -1;
+        while ($number <= 100)
+        {
+        
+            if ($number >= 0 AND $number <= 20)
+            {
+                echo '<i> '.$number.' </i> <br>';
+                $number++;
+            }
 
+            elseif ($number == 42)
+            {
+                echo 'La Plateforme_ <br>';
+                $number++;
+            }
 
-while ($n < 100){   
-        $n= $n+1;
+            elseif ($number >= 25 AND $number <= 50)
+            {
+                echo  '<u> '.$number.' </u> <br>';
+                $number++;
+            }
 
-    if (($n >= 0)&&($n <= 20))
-    {
-        echo " <i>$n</i>";
-        echo " <br>";
-    }
+           
 
+            else
+            {
+                echo $number. '<br>';
+                $number++;
+            }
 
-    if (($n > 20)&&($n<25))
-    {
-        echo " $n ";
-        echo " <br>";
-    }
-
-
-
-    if (($n >= 25)&&($n<=50))
-    {
-        echo "<u> $n </u>";
-        echo " <br>";
-
-        if($n==41){
-            echo 'La Plateforme_<br>';
-            $n= $n+1;
         }
-    }
-
-    if (($n > 50)&&($n <=100))
-    {
-        echo "$n";
-        echo "<br>";
-    }
-
-
- }
-
+      
 
 ?>

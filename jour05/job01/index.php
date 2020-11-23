@@ -1,7 +1,11 @@
-<?php 
+<?php
 
-    function Hello($Hello){
-        echo $Hello;
-    }
+$str="LaPlateforme!";
 
-    Hello("Hello LaPlateforme!");
+function hello($str)
+{
+    echo "Hello" . "". $str;
+}
+
+hello($str);
+?>

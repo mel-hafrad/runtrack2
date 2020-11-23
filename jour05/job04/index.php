@@ -1,14 +1,40 @@
 <?php 
 
+    $operation = "+";
+    $a=20;
+    $b=3;
 
-$a = 15;
-$b = 20;
-$operation= $a + $b ;
-function calcule($a ,$operation, $b ){
-    
-    $resultat =;
-    return $resultat;
+function calcule($a, $operation, $b)
+{
+    if ($operation == '+')
+    {
+        return ($a + $b);
+    }
+
+    elseif ($operation == '-')
+    {
+        return ($a - $b);
+    }
+
+    elseif ($operation == '*')
+    {
+        return ($a * $b);
+    }
+
+    elseif ($operation == '/')
+    {
+        return ($a / $b);
+    }
+
+     /*else($operation == '%')
+    {
+         return ($a % $b);
+     }*/
 
 }
 
-echo calcule();
+
+echo calcule($a, $operation, $b);
+
+
+?>

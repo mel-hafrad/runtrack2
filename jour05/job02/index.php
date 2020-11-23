@@ -1,20 +1,19 @@
-<?php 
-$a= true;
-$b= false;
+<?php
+
+$jour=true;
 
 function bonjour($jour)
-{  
-    if ($jour == true){
-
-    echo "Bonjour" . "<br>". "<br>";
+{
+    if ($jour)
+    {
+        echo "Bonjour";
     }
 
-    else{
-        echo "Bonsoir". "<br>";
-        }
+    else
+    {
+        echo "Bonsoir";
+    }
 }
+ bonjour("jour");
 
-
-bonjour($a);
-bonjour($b);
-
+?>

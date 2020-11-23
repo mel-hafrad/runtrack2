@@ -1,10 +1,14 @@
 <?php
 
+$str= "Hello LaPlateforme";
 
-
-function gethello()
+function gethello($str)
 {
-    $h1 = "Hello LaPlateforme!";
-    return $h1;
+    return ($str);
 }
-echo gethello();
+$resultat= gethello($str);
+echo $resultat;
+
+
+
+?>

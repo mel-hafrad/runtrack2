@@ -1,41 +1,43 @@
+<?php
 
-<?php 
+$counter = 0;
 
-
-//$argument = $_GET['argument'];
-//$argument2 = $_GET['argument2'];
-
-// echo $argument  . "<br>" . $argument2; 
-
-
-
-$i = 0;              //initialiser la variable en dehors de la boucle pour un Foreach ;
-
-
-
-
-//pour chaque élément de Tableau "$_Get attribu une variable "$key" au clés "$value" au valeur de mon tableau. 
-# $_Get est un tableau généré automatiquement qui contient les "$values" des "$keys" quand on le submit ;
-foreach ($_GET as $key => $value){
-    $i++; 
+if (!empty($_GET))
+{
+    foreach ($_GET as $element => $values)
+        {
+        $counter++;
+        }
+echo 'Ce formulaire contient ' . $counter . ' argument(s) GET.' ;
 }
-echo "<br>";
-echo $i;
-
-// Code php 
-
 ?>
 
 
-<form action="index.php" method="GET">
-    <label for="argument">argument</label>
-    <input type="text" id="argument" name="argument"> <br><br>
 
-    <label for="argument2">argument2</label>
-    <input type="text" id="argument2" name="argument2"> <br><br>
 
-    <input type="submit" value="submit">
+
+<html>
+
+<body>
+
+<form method="get" action="index.php">
+
+
+    <label for= "vorname">PRENOM</label> 
+    <input type="text" name="vorname" id="ligne1"><br />
+    
+    <label for= "name">NOM</label> 
+    <input type="text" name="name" id="ligne2"><br />
+ 
+   <label for= "password">PASSWORD</label> 
+   <input type="password" name="password" id="ligne3"><br />
+  
+     <input type="submit" name="submit" value="submit"><br />
+
 </form>
 
+</body>
 
+</html>
 
+   

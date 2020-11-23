@@ -1,20 +1,10 @@
+<?php
 
-    
+$str= 'Hello LaPlateforme!';
+echo $str. '<br>'.$str.'' ;
 
-    
-    <?php
-    // premier commentaire
-         $oui = '<strong> Hello LaPlateforme!</strong>';
-        echo $oui;
-    ?>
 
-     <br><br>
+/*commentaire long*/
+// commentaire court
 
-    
-    <?php
-    # deuxième commentaire
-        echo str_repeat("$oui", 1);    //nb de Hello laPlateforme
-    ?>
-     
-  
-
+;?>

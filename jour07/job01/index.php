@@ -1,16 +1,36 @@
-
 <?php
-
-$file =fopen('data.text', 'c+');
-$nbsvisites = intval(fgets($file));
+session_start();
 
 
-$count++;
-fseek($file , 0);
-fputs($file , $count);
+if(isset($_POST['button']) && $_POST['button'] == 0)
+{
+    $_SESSION['nbvisites']=-1;
+    $_POST['button'] = NULL;
+} 
 
-fclose($file);
+if (!(isset($_SESSION['nbvisites']))) 
+{
+    $_SESSION['nbvisites']=0;
+}
 
- echo $nbsvisites;
+else 
+{
+    $_SESSION['nbvisites']++;
+}
 
-?>
+echo $_SESSION['nbvisites'];
+
+
+?> 
+
+<!DOCTYPE html> 
+<html> 
+
+<form method=post>
+<button type=submit name=button value=0 >BUTTON</button>
+</form>
+
+</html>
+
+
+

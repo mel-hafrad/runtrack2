@@ -1,22 +1,23 @@
 <?php
 
-$n = 0;
+        $number= 0;
 
+        while ($number <= 1337)
+        {
+        
+            if ($number == 26 OR $number == 37 OR $number == 88 OR $number == 1111 OR $number == 1337 )
+            {
+                echo '<br>';
+                $number++;
+            }
 
+            else
+            {
+                echo $number . '<br>';
+                $number++;
+            }
 
-while ($n < 1336){
-        echo $n;
-        $n = $n + 1;
-        echo " <br/>";
-    if (($n == 26)||($n == 37)||($n == 88)||($n == 1111)){
-        echo "<br/>";
-        $n = $n + 1;
         }
-            
-        }
-
-
-
-
+      
 
 ?>

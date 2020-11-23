@@ -1,6 +1,1 @@
-
-
-    <?php
-      echo '<strong> Hello World !</strong>';
-    ?>
-
+<?php echo "Hello laPlateforme!";?>

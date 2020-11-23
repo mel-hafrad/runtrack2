@@ -1,68 +1,66 @@
 
-
-<style type="text/css">
-		h1{
-			text-align: center;
-		}
-		table{
-			margin-top: 15px;
-			display: flex;
-			justify-content: center;
-            padding-top:10%;
-		}
-		td{
-			border:2px solid black;
-            color:green;
-			
-			padding: 10px;
-		}
-		th{
-			color: red;
-			border:1px solid black;
-		}
-
-		
-	</style>
-    
-
-        <?php
-
-            $boo = true; // assigne la valeur TRUE à $boo Booléen
-            $a = 1234; // un nombre décimal Entiers
-            $carac = "ouais"; // une chaine de caractères
-            $b = 1.234;     // virgule flotante 
-            $tableau = ["type","nom","valeur"];
-
-            ?>
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset= "utf-8">
+        <title>TABLEAU</title>
+</head>
 
 
+<body>
 
-        <table>
-            <tr>
-                <th><?php echo $tableau[0]; ?> </th>
-                <th><?php echo $tableau[1]; ?></th>
-                <th><?php echo $tableau[2]; ?></th>
-            </tr>
-            <tr>
-                <td><?php echo gettype ($boo);?></td>        <!--Connaitre le type de fonction-->
-                <td><?php echo '$boo';?></td>               <!--Afficher le nom  donné de la fonction-->
-                <td><?php echo $boo;?></td>                 <!--Afficher le Value-->
-            </tr>
-            <tr>
-                <td><?php echo gettype ($a);?></td>
-                <td><?php echo '$a';?></td>
-                <td><?php echo $a;?></td>
-            </tr>
-            <tr>
-                <td><?php echo gettype ($carac);?></td>
-                <td><?php echo '$carac';?></td>
-                <td><?php echo $carac;?></td>
-            </tr>
-            <tr>
-                <td><?php echo gettype ($b);?></td>
-                <td><?php echo '$b';?></td>
-                <td><?php echo $b;?></td>
-            </tr>
-        </table>
+<main>
+
+<?php
+
+$bool=true;
+$str= 'Hello ';
+$int= 5;
+$float= 4.6;
+
+?>
 
 
+<table>
+
+<tr>
+        <th>TYPE</th>
+        <th>VALEUR</th>
+        <th>NOM</th>
+</tr>
+
+<tr>    
+    <td> <?php echo gettype($bool) ?> </td>
+    <td> <?php echo $bool ?> </td>
+    <td> <?php echo '$bool' ?> </td>
+
+</tr>
+
+<tr>    
+    <td> <?php echo gettype($str) ?> </td>
+    <td> <?php echo $str ?> </td>
+    <td> <?php echo '$str' ?> </td>
+
+</tr>
+
+<tr>    
+    <td> <?php echo gettype($int) ?> </td>
+    <td> <?php echo $int ?> </td>
+    <td> <?php echo '$int' ?> </td>
+
+</tr>
+
+<tr>    
+    <td> <?php echo gettype($float) ?> </td>
+    <td> <?php echo $float ?> </td>
+    <td> <?php echo '$float' ?> </td>
+
+</tr>
+
+</table>
+
+</main>
+
+</body>
+
+</html>
